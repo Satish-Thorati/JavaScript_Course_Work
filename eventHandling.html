@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Handling</title>
+    <style>
+        body{
+            background-color: darkblue;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            margin: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+
+        }
+        button{
+            cursor: pointer;
+            background-color: gainsboro;
+            padding: 5px;
+            border: none;
+            width: 15%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Event Handling Listeners</h3>
+    <button id="btn" onclick="add()">Click Me</button>
+</body>
+<script>
+    let button = document.getElementById("btn");
+
+    //EventHandling functionality
+    button.addEventListener("click",()=>{    //addEventListener have highest priority than onclick,New version of js
+        alert("Button Clicked");             //3
+    })
+
+    button.onclick = () => {         //1
+        alert("Button Clicks");     //old version of js,onclick have lowest priority than addEventListener
+    }
+
+    function add(){    //2
+        alert("Clicked");
+    } 
+</script>
+</html>

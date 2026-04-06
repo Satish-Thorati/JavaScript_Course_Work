@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"  placeholder="Enter value" id="input">
+    <button onclick="saveLocal()">Save Local</button>
+    <button onclick="saveSession()">Save Session</button>
+    <button onclick="showData()">Show Data</button>
+    <script>
+        function saveLocal(){
+            let value=document.getElementById("input").value;
+            
+            localStorage.setItem("data",value);
+           
+
+        }
+        function saveSession(){
+            let value=document.getElementById("input").value;
+            
+            sessionStorage.setItem("data",value);
+
+        }
+        function showData(){
+            let local = localStorage.getItem("data");
+            let session = sessionStorage.getItem("data");
+
+            console.log("Data Local: ",local);
+            console.log("Data Session: ",session);
+
+        }
+        
+
+    </script>
+    
+</body>
+</html>

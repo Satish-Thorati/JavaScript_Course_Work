@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        body{
+            background-color: darkcyan;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        form{
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #dbdbdb;
+            border-radius: 10px;
+            height: auto;
+            text-align: center;
+            background-color: aliceblue;
+            
+
+        }
+        label{
+            color: black;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        input{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+        }
+        button{
+            padding: 3px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            background-color: crimson;
+            border-radius: 3px;
+            color: white;
+            border: none;
+            width: 50%;
+            height: 15%;
+
+        }
+        p{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form id="submitForm">
+        <div>
+            <label>UserName:</label>
+            <input type="text" placeholder="Enter Your Name" id = "username"/>
+            <p id="nameValue"> </p>
+            
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="text" placeholder="Enter Your Email" id = "usermail"/>
+            <p id="emailValue"> </p>
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="password" placeholder="Enter Your Password"  id ="userpassword"/>
+            <p id="passwordValue"> </p>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="formValidate.js"></script>
+</body>
+</html>

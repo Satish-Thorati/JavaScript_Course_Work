@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout</title>
+</head>
+<body>
+    <h1 id="text"> JavaScript SetTimeOut</h1>
+    <button onclick="stop()"> Stop</button>
+    <script>
+        let text = document.getElementById("text");
+        let clear = setTimeout(() => {
+            text.style.color = "blueviolet";
+        }, 5000);
+        function stop() {
+            clearTimeout(clear);
+        }
+
+    </script>
+</body>
+</html>

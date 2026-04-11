@@ -1,0 +1,42 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Alice",
+      "age": 23
+    },
+    {
+      "name": "AjayReddy",
+      "id": "2",
+      "age": 25
+    },
+    {
+      "id": "3",
+      "name": "Charlie",
+      "age": 24
+    },
+    {
+      "name": "Rahul",
+      "age": 22,
+      "id": "bSnzWs9J3YY"
+    },
+    {
+      "name": "Rahul",
+      "age": 22,
+      "id": "FuE5obAriEs"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Chemistry",
+      "instructor": "Dr.Ajay",
+      "id": "101"
+    },
+    {
+      "id": "102",
+      "title": "Physics",
+      "Instructor": "Dr. Johnson"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

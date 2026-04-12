@@ -56,10 +56,13 @@ function outerFunction () {
 
 console.log(updatedStudent);
 updatedStudent[0].greet();
+//call method -- to call a function with a specified this value and arguments, it calls the function immediately
 outerFunction.call(updatedStudent[0]);
+//apply method -- to call a function with a specified this value and arguments, it calls the function immediately, the difference between call and apply is that call accepts arguments as a comma separated values while apply accepts arguments as an array
 outerFunction.apply(updatedStudent[0]);
-let value = outerFunction.bind(updatedStudent[0]);       
 
+//bind method returns a new function with the specified this value and arguments, it does not call the function immediately, we need to call the returned function to see the result
+let value = outerFunction.bind(updatedStudent[0]);       
 value();                                                  
 
 
